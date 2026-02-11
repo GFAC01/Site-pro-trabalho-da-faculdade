@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - RBLOX Shop</title>
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Fonte moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            background-color: #ff3333;
+            border-bottom: 3px solid #cf0000;
+        }
+
+        .logo-roblox {
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            font-size: 28px;
+            gap: 6px;
+            letter-spacing: 2px;
+        }
+
+        .roblox-icon {
+            transform: translateY(6px);
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+        }
+
+        .roblox-search {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            padding-left: 30px;
+            height: 40px;
+        }
+
+        .roblox-search input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .roblox-search button {
+            background: #b6b6b6;
+            border: none;
+            width: 80px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .roblox-search button i {
+            color: rgb(43, 43, 43);
+        }
+
+        .promo-banner {
+            background: #cf0000;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .checkout-box {
+            background-color: #262626;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .checkout-box h6 {
+            color: white;
+            font-weight: 700;
+        }
+
+        .input-field input,
+        .input-field select {
+            color: white;
+        }
+
+        .input-field label {
+            color: #bdbdbd;
+        }
+
+        .input-field input:focus + label,
+        .input-field select:focus + label {
+            color: #ff3333 !important;
+        }
+
+        .input-field input:focus,
+        .input-field select:focus {
+            border-bottom: 1px solid #ff3333 !important;
+            box-shadow: 0 1px 0 0 #ff3333 !important;
+        }
+
+        .btn-red {
+            background-color: #ff3333;
+        }
+
+        .btn-red:hover {
+            background-color: #cf0000;
+        }
+
+        footer {
+            background-color: #181818;
+            color: #c2c2c2;
+        }
+
+        footer a {
+            color: #c2c2c2;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        .collection-item {
+            background-color: #262626;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .collection-item .title {
+            color: white;
+        }
+
+        .collection-item p {
+            color: #ff6666;
+        }
+
+        p.total {
+            font-weight: bold;
+            color: #ff3333;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo logo-roblox">R<img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" class="roblox-icon">BLOX</a>
+            <ul class="right hide-on-med-and-down">
+            <li style="width:300px; margin-right:20px;">
+                <form class="roblox-search">
+                <input type="text" placeholder="Buscar itens, Robux...">
+                <button type="submit"><i class="material-icons">search</i></button>
+                </form>
+            </li>
+            <li><a href="categoria.html">Itens</a></li>
+            <li><a href="#">Robux</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        🎉 Consiga 1300 Robux por apenas R$50!
+    </div>
+
+    <!-- Checkout -->
+    <div class="container section">
+        <h4>Checkout</h4>
+        <p>Revise seus dados e finalize sua compra.</p>
+        <div class="row">
+            <!-- Dados do Cliente -->
+            <div class="col s12 m8">
+                <div class="checkout-box">
+                    <h6><i class="material-icons left">local_shipping</i> Detalhes de Envio</h6>
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <input id="nome" type="text" required>
+                            <label for="nome">Nome Completo</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="email" type="email" required>
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input id="endereco" type="text" required>
+                            <label for="endereco">Endereço</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="cidade" type="text">
+                            <label for="cidade">Cidade</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="cep" type="text">
+                            <label for="cep">CEP</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <select>
+                                <option value="" disabled selected>Selecione o método de envio</option>
+                                <option value="1">Entrega em Casa (3-5 dias) - Grátis</option>
+                                <option value="2">Retirar no Ponto (2-4 dias) - Grátis</option>
+                            </select>
+                            <label>Opção de Envio</label>
+                        </div>
+                    </div>
+
+                    <!-- Pagamento -->
+                    <h6 class="section"><i class="material-icons left">credit_card</i> Pagamento</h6>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="" disabled selected>Selecione o método</option>
+                                <option value="1">Cartão de Crédito</option>
+                                <option value="2">PayPal</option>
+                                <option value="3">Apple Pay</option>
+                            </select>
+                            <label>Método de Pagamento</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="card-name" type="text">
+                            <label for="card-name">Nome no Cartão</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input id="card-number" type="text" maxlength="19">
+                            <label for="card-number">Número do Cartão</label>
+                        </div>
+                        <div class="input-field col s6 m3">
+                            <input id="card-exp" type="text" placeholder="MM/AA">
+                            <label for="card-exp">Validade</label>
+                        </div>
+                        <div class="input-field col s6 m3">
+                            <input id="card-cvc" type="text" maxlength="3">
+                            <label for="card-cvc">CVC</label>
+                        </div>
+                    </div>
+
+                    <div class="center section">
+                        <a href="obrigado.html" class="btn btn-red">Finalizar Compra</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resumo do Pedido -->
+            <div class="col s12 m4">
+                <div class="checkout-box">
+                    <h6>Resumo do Pedido</h6>
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <img src="https://production-gameflipusercontent.fingershock.com/us-east-1:a8918237-53f9-44b7-bc4d-a7db769fddb1/cab14e70-12fb-4b65-82f0-5d889e2703af/32a13ceb-14c8-4f45-8eb7-40d02ccd10bd/640x640.webp" alt="Robux" class="circle">
+                            <span class="title">450 Robux</span>
+                            <p>R$ 24,90</p>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="https://tr.rbxcdn.com/180DAY-4ed9003ad24104766d027d70bb6d9cec/420/420/Hat/Webp/noFilter" alt="" class="circle">
+                            <span class="title">Chapéu Dominus Vermelho</span>
+                            <p>937 Robux</p>
+                        </li>
+                    </ul>
+                    <p class="total">Valor Total: R$ 24,90 e 937 Robux</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h6>Suporte</h6>
+                    <ul>
+                        <li><a href="#">Devolução e Garantia</a></li>
+                        <li><a href="#">Pagamentos</a></li>
+                        <li><a href="#">Envio</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h6>Sobre</h6>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                        <li><a href="#">Afiliados</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h6>Contato</h6>
+                    <p>Email: suporte@r-bloxshop.com</p>
+                </div>
+            </div>
+            <div class="center">
+                © 2025 RBLOX Shop — Não afiliado ao Roblox.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.Sidenav.init(document.querySelectorAll('.sidenav'));
+            M.FormSelect.init(document.querySelectorAll('select'));
+        });
+    </script>
+</body>
+</html>

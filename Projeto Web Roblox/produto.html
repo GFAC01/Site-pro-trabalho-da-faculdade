@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Materialize -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <!-- Icones -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Fonte estilo Roblox -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
+  <title>RBLOX Shop - Produto</title>
+
+  <style>
+    body {
+      background-color: #1c1c1c;
+      color: white;
+      font-family: "Poppins", sans-serif;
+    }
+
+    nav {
+      background-color: #ff3333;
+      border-bottom: 3px solid #cf0000;
+    }
+
+    .logo-roblox {
+      font-weight: 900;
+      display: flex;
+      align-items: center;
+      font-size: 28px;
+      gap: 6px;
+      letter-spacing: 2px;
+    }
+
+    .roblox-icon {
+      transform: translateY(6px);
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+    }
+
+    .promo-banner {
+      background: #cf0000;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .roblox-search {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      background: #fff;
+      border-radius: 30px;
+      overflow: hidden;
+      padding-left: 30px;
+      height: 40px;
+    }
+
+    .roblox-search input {
+      border: none;
+      outline: none;
+      flex: 1;
+      font-size: 14px;
+    }
+
+    .roblox-search button {
+      background: #b6b6b6;
+      border: none;
+      width: 80px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .roblox-search button i {
+      color: rgb(43, 43, 43);
+    }
+
+    .banner-product {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .product-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .price {
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #00ff73;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #999;
+      margin-left: 8px;
+    }
+
+    .btn-buy {
+      background-color: #ff3333;
+      font-weight: 700;
+    }
+
+    footer.page-footer {
+      background-color: #ff0000 !important;
+      color: white;
+    }
+
+    footer.page-footer a {
+      color: #ffe5e5;
+    }
+
+    footer.page-footer a:hover {
+      color: #fff;
+    }
+
+    .collapsible-header i {
+      color: #ff3333;
+    }
+
+    .product-card .card {
+      background-color: #262626;
+      border-radius: 10px;
+    }
+
+    .product-card .card-title {
+      font-weight: 900;
+    }
+
+    .section h5, .section h4 {
+      color: white;
+    }
+    
+    /* Força fundo escuro nas collapsibles */
+    .collapsible-header,
+    .collapsible-body {
+      background-color: #262626 !important;
+      color: white !important;
+    }
+
+    /* Remove o fundo branco padrão do Materialize dentro do texto */
+    .collapsible-body p {
+      color: white !important;
+    }
+
+    /* Cartões dos produtos relacionados */
+    .product-card .card,
+    .product-card .card-content,
+    .product-card .card-image {
+      background-color: #262626 !important;
+    }
+
+    /* Deixa o card-text sempre branco */
+    .product-card .card-content p {
+      color: white !important;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="nav-wrapper container">
+      <a href="index.html" class="brand-logo logo-roblox">R<img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" class="roblox-icon">BLOX</a>
+      <ul class="right hide-on-med-and-down">
+        <li style="width:300px; margin-right:20px;">
+          <form class="roblox-search">
+            <input type="text" placeholder="Buscar itens, Robux...">
+            <button type="submit"><i class="material-icons">search</i></button>
+          </form>
+        </li>
+        <li><a href="categoria.html">Itens</a></li>
+        <li><a href="#">Robux</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PROMO -->
+  <div class="promo-banner">
+    🎉 Bônus especial: +20% Robux em compras acima de R$50!
+  </div>
+
+  <!-- DETALHES DO PRODUTO -->
+  <div class="container section banner-product">
+    <div class="col s12 m6 product-image">
+      <img src="https://tr.rbxcdn.com/180DAY-4ed9003ad24104766d027d70bb6d9cec/420/420/Hat/Webp/noFilter" alt="Jaqueta Premium">
+    </div>
+    <div class="col s12 m6">
+      <h4>Chapéu Dominus Vermelho</h4>
+      <p class="grey-text">Chapéu Dominus Vermelho versão base.</p>
+      <p><span class="price">937 Robux</span> <span class="old-price">1250 Robux</span> <span class="red-text">-25%</span></p>
+      <p>Envio imediato após pagamento</p>
+
+      <div class="input-field">
+        <select>
+          <option value="" disabled selected>Escolha a cor</option>
+          <option value="1">Vermelho</option>
+          <option value="2">Preto</option>
+          <option value="3">Azul</option>
+        </select>
+        <label>Cor</label>
+      </div>
+
+      <a href="carrinho.html" class="btn btn-buy">Comprar Agora</a>
+
+      <div class="section">
+        <p><strong>Disponibilidade:</strong> 22 unidades</p>
+        <p><strong>Nota:</strong> ⭐⭐⭐⭐☆ (5303 avaliações)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESCRIÇÃO DETALHADA -->
+  <div class="container section">
+    <ul class="collapsible popout">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">info</i>Descrição do Produto</div>
+        <div class="collapsible-body"><p>Chapéu incrivel, confortável e ideal para todas as experiências. Itens digitais exclusivos para Roblox.</p></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">star</i>Avaliações</div>
+        <div class="collapsible-body">
+          <p><strong>Joaozinho675:</strong> "Ótimo item, recomendo!"</p>
+          <p><strong>superkanekipro:</strong> "fiquei muito EDGE, me tornei as próprias sombras."</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- PRODUTOS RELACIONADOS -->
+  <div class="container section">
+    <h5>Produtos Relacionados</h5>
+    <div class="row">
+      <div class="col s12 m6 l3">
+        <div class="card product-card">
+          <div class="card-image">
+            <img src="https://production-gameflipusercontent.fingershock.com/us-east-1:a8918237-53f9-44b7-bc4d-a7db769fddb1/cab14e70-12fb-4b65-82f0-5d889e2703af/32a13ceb-14c8-4f45-8eb7-40d02ccd10bd/640x640.webp" width="200" height="220">
+          </div>
+          <div class="card-content center">
+            <p>450 Robux<br>R$ 24,90</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m6 l3">
+        <div class="card product-card">
+          <div class="card-image">
+            <img src="https://tr.rbxcdn.com/180DAY-59c5a5c8c79df1ebbe3983c4e7636d75/420/420/FaceAccessory/Webp/noFilter" width="200" height="220">
+          </div>
+          <div class="card-content center">
+            <p>Máscara Cyber<br>410 Robux</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <h6>Suporte</h6>
+          <ul>
+            <li><a href="#">Como comprar</a></li>
+            <li><a href="#">Pagamentos</a></li>
+            <li><a href="#">Entrega digital</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m4">
+          <h6>Sobre</h6>
+          <ul>
+            <li><a href="#">Quem somos</a></li>
+            <li><a href="#">Parcerias</a></li>
+            <li><a href="#">Afiliados</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m4">
+          <h6>Contato</h6>
+          <p>Email: suporte@r-bloxshop.com</p>
+        </div>
+      </div>
+      <div class="center">
+        © 2025 RBLOX Shop — Não afiliado ao Roblox.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      M.FormSelect.init(document.querySelectorAll('select'));
+      M.Collapsible.init(document.querySelectorAll('.collapsible'));
+    });
+  </script>
+
+</body>
+</html>

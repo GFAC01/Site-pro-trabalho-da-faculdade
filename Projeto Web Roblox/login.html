@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RBLOX Shop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #1c1c1c;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #ff3333;
+            border-bottom: 3px solid #cf0000;
+        }
+
+        .logo-roblox {
+            font-weight: 900;
+            display: flex;
+            align-items: center;
+            font-size: 28px;
+            gap: 6px;
+            letter-spacing: 2px;
+        }
+
+        .roblox-icon {
+            transform: translateY(6px);
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+        }
+
+        .roblox-search {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            padding-left: 30px;
+            height: 40px;
+        }
+
+        .roblox-search input {
+            border: none;
+            outline: none;
+            flex: 1;
+            font-size: 14px;
+        }
+
+        .roblox-search button {
+            background: #b6b6b6;
+            border: none;
+            width: 80px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .roblox-search button i {
+            color: rgb(43, 43, 43);
+        }
+
+        .brand-logo {
+            font-weight: bold;
+        }
+
+        .card {
+            background-color: #262626;
+            border-radius: 12px;
+        }
+
+        .input-field input {
+            color: white;
+        }
+
+        .input-field label {
+            color: #ccc;
+        }
+
+        .input-field input:focus + label {
+            color: #ff3333 !important;
+        }
+
+        .input-field input:focus {
+            border-bottom: 1px solid #ff3333 !important;
+            box-shadow: 0 1px 0 0 #ff3333 !important;
+        }
+
+        .btn-red {
+            background-color: #ff3333;
+        }
+
+        .btn-red:hover {
+            background-color: #cf0000;
+        }
+
+        .grey-text {
+            color: #ccc !important;
+        }
+
+        footer {
+            background-color: #ff3333;
+            color: #c2c2c2;
+            padding-top: 30px;
+        }
+
+        footer a {
+            color: #c2c2c2;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo logo-roblox">R<img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" class="roblox-icon">BLOX</a>
+            <ul class="right hide-on-med-and-down">
+                <li style="width:300px; margin-right:20px;">
+                    <form class="roblox-search">
+                    <input type="text" placeholder="Buscar itens, Robux...">
+                    <button type="submit"><i class="material-icons">search</i></button>
+                    </form>
+                </li>
+                <li><a href="categoria.html">Itens</a></li>
+                <li><a href="#">Robux</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <div class="container section">
+        <h4 class="center">Login</h4>
+        <p class="center grey-text">Entre com seu e-mail e senha para acessar sua conta.</p>
+    </div>
+
+    <div class="container section" style="max-width: 500px;">
+        <div class="card">
+            <div class="card-content">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" required>
+                        <label for="email">E-mail</label>
+                    </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">lock</i>
+                        <input id="senha" type="password" required>
+                        <label for="senha">Senha</label>
+                    </div>
+
+                    <p>
+                        <label>
+                            <input type="checkbox" />
+                            <span>Lembrar-me</span>
+                        </label>
+                    </p>
+
+                    <div class="center section">
+                        <button class="btn btn-red" type="submit">Entrar</button>
+                    </div>
+
+                    <div class="center">
+                        <a href="#" class="grey-text">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card-action center">
+                <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se aqui</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h6>Suporte</h6>
+                    <ul>
+                        <li><a href="#">Devolução e Garantia</a></li>
+                        <li><a href="#">Pagamentos</a></li>
+                        <li><a href="#">Envio</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h6>Sobre</h6>
+                    <ul>
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Parcerias</a></li>
+                        <li><a href="#">Afiliados</a></li>
+                    </ul>
+                </div>
+                <div class="col s12 m4">
+                    <h6>Contato</h6>
+                    <p>Email: suporte@r-bloxshop.com</p>
+                </div>
+            </div>
+            <div class="center">
+                © 2025 RBLOX Shop — Não afiliado ao Roblox.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            M.Sidenav.init(document.querySelectorAll('.sidenav'));
+        });
+    </script>
+</body>
+</html>
