@@ -3,155 +3,37 @@
 <head>
     <meta charset="UTF-8">
 
-    <!-- Materialize -->
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
     <!-- Icones do google -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Fonte parecida com a do Roblox -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
-
-    <title>RBLOX Shop - Comprar Robux e Itens</title>
+    <!-- Importando o style.css -->
+    <link href="style.css" rel="stylesheet">
+    <title>ROBLOX Shop - Comprar Robux e Itens</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <style>
-        body {
-            background-color: #1c1c1c;
-            color: white;
-            font-family: "Poppins", sans-serif;
-        }
-
-        nav {
-            background-color: #ff3333;
-            border-bottom: 3px solid #cf0000;
-        }
-
-        .promo-banner {
-            background: #cf0000;
-            color: white;
-            padding: 10px 0;
-            text-align: center;
-            font-weight: bold;
-        }
-
-        .banner {
-            background: url('https://tr.rbxcdn.com/68b0e874e69a3759897acc0a2e9f83a8/768/432/Image/Webp') center/cover no-repeat;
-            height: 350px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .banner-content {
-            background-color: rgba(0,0,0,0.6);
-            padding: 25px 50px;
-            border-radius: 10px;
-        }
-
-        .card {
-            background-color: #262626;
-            border-radius: 10px;
-        }
-
-        .card-title {
-            font-weight: 900;
-        }
-
-        footer.page-footer {
-            background-color: #ff3333;
-        }
-
-        footer a {
-            color: #c2c2c2;
-        }
-
-        footer a:hover {
-            color: #ff3333;
-        }
-
-        .logo-roblox {
-            font-weight: 900;
-            display: flex;
-            align-items: center;
-            font-size: 28px;
-            gap: 6px;
-            letter-spacing: 2px;
-        }
-
-        .roblox-icon {
-            transform: translateY(6px);
-            display: inline-block;
-            width: 36px;
-            height: 36px;
-        }
-
-        .roblox-search {
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            background: #fff;
-            border-radius: 30px;
-            overflow: hidden;
-            padding-left: 30px;
-            height: 40px;
-        }
-
-        .roblox-search input {
-            border: none;
-            outline: none;
-            flex: 1;
-            font-size: 14px;
-        }
-
-        .roblox-search button {
-            background: #b6b6b6;
-            border: none;
-            width: 80px;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-        }
-
-        .robux-price {
-            color: #00ff73;
-            font-weight: bold;
-            font-size: 18px;
-        }
-
-        .roblox-search button i {
-            color: rgb(43, 43, 43);
-        }
-
-        .card-image img {
-            border-radius: 10px 10px 0 0;
-        }
-
-    </style>
 </head>
 <body>
 
     <!-- NAVBAR -->
     <nav>
-        <div class="nav-wrapper container">
-            <a href="index.html" class="brand-logo logo-roblox">R<img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" class="roblox-icon">BLOX</a>
+        <a href="index.html" class="nome-logo-roblox">R <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" class="roblox-icon"> BLOX</a>
 
-            <ul class="right hide-on-med-and-down">
-                <li style="width:300px; margin-right:20px;">
-                    <form class="roblox-search" style="width:100%;">
-                        <input type="text" placeholder="Buscar itens, Robux..." style="padding-left:10px;">
-                        <button type="submit">
-                            <i class="material-icons">search</i>
-                        </button>
-                    </form>
-                </li>
+        <ul class="lista-navbar-roblox">
+            <li style="width:450px; margin-right:20px;">
+                <form class="roblox-search" style="width:100%;">
+                    <input class="roblox-search-txt" type="text" placeholder="Buscar itens, Robux...">
+                    <button type="submit">
+                        <i class="material-icons">search</i>
+                    </button>
+                </form>
+            </li>
 
-                <li><a href="categoria.html">Itens</a></li>
-                <li><a href="#">Robux</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="login.html">Login</a></li>
-            </ul>
-        </div>
+            <li><a class="navbar-underline" href="categoria.html">Itens</a></li>
+            <li><a class="navbar-underline" href="#">Robux</a></li>
+            <li><a class="navbar-underline" href="#">Ofertas</a></li>
+            <li><a class="navbar-underline" href="login.html">Login</a></li>
+        </ul>
     </nav>
 
     <!-- PROMO -->
