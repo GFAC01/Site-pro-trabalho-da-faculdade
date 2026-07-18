@@ -12,8 +12,9 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 200px;
     background-color: #df0808;
     border: 3px solid #d7082a;
     font-family: "Poppins", sans-serif;
@@ -43,6 +44,15 @@ nav {
 
 }
 
+.search-navbar-roblox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
 .roblox-search {
     display: flex;
     flex-direction: row;
@@ -58,24 +68,30 @@ nav {
 }
 
 .navbar-underline {
-    color: white;
+    color: rgb(245, 238, 238);
     text-decoration: none;
-    
-    .hover {
-        color: blue;
-    }
-    
+    font-size: 16px;
 }
 
+.navbar-underline:hover {
+    color: white;
+    font-size: 18px;
+}
+    
+
 /*
+    Banner de promoção
+*/
 
 .promo-banner {
-    background: #cf0000;
+    background: rgb(183, 16, 7);
     color: white;
-    padding: 10px 0;
+    padding: 12px 0;
     text-align: center;
     font-weight: bold;
 }
+
+/*
 
 .banner {
     background: url('https://tr.rbxcdn.com/68b0e874e69a3759897acc0a2e9f83a8/768/432/Image/Webp') center/cover no-repeat;
