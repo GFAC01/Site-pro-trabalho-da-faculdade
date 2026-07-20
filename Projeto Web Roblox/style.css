@@ -5,77 +5,114 @@ body {
     color: white;
 }
 
-/*
-    NAVBAR
-*/
+/* ===========================
+   NAVBAR
+=========================== */
 
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 200px;
-    background-color: #df0808;
-    border: 3px solid #d7082a;
-    font-family: "Poppins", sans-serif;
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:12px 30px;
+    background:#df0808;
+    border:3px solid #d7082a;
+    font-family:"Poppins", sans-serif;
 }
 
-.nome-logo-roblox {
-    color: white;
-    font-weight: 900;
-    display: flex;
-    align-items: center;
-    font-size: 28px;
-    text-decoration: none;
+.nav-esquerda,
+.nav-centro,
+.nav-direita{
+    flex:1;
+    display:flex;
+    align-items:center;
 }
 
-.roblox-icon {
-    width: 36px;
-    height: 36px;
+.nav-esquerda{
+    justify-content:flex-start;
 }
 
-
-.lista-navbar-roblox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 30px;
-    list-style-type: none;
-
+.nav-centro{
+    justify-content:center;
 }
 
-.search-navbar-roblox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    list-style-type: none;
-
+.nav-direita{
+    justify-content:flex-end;
 }
 
-.roblox-search {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    background: #e9e5e5;
-    border-radius: 48px;
-    overflow: hidden;
-    height: 36px;
+/* Logo */
+
+.nome-logo-roblox{
+    display:flex;
+    align-items:center;
+    gap:0;
+    color:#fff;
+    text-decoration:none;
+    font-size:28px;
+    font-weight:900;
 }
 
-.roblox-search-txt {
-    padding-right: 54%;
+.roblox-icon{
+    width:36px;
+    height:36px;
 }
 
-.navbar-underline {
-    color: rgb(245, 238, 238);
-    text-decoration: none;
-    font-size: 16px;
+/* Pesquisa */
+
+.roblox-search{
+    display:flex;
+    align-items:center;
+    width:500px;
+    max-width:100%;
+    height:40px;
+    background:#e9e5e5;
+    border-radius:50px;
+    overflow:hidden;
 }
 
-.navbar-underline:hover {
-    color: white;
-    font-size: 18px;
+.roblox-search input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:0 15px;
+    font-size:14px;
+    background:transparent;
+}
+
+.roblox-search button{
+    width:50px;
+    height:100%;
+    border:none;
+    background:#b6b6b6;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+}
+
+.roblox-search button i{
+    color:#333;
+}
+
+/* Menu */
+
+.lista-navbar-roblox{
+    display:flex;
+    align-items:center;
+    gap:30px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.navbar-underline{
+    color:#fff;
+    text-decoration:none;
+    font-size:16px;
+    transition:.2s;
+}
+
+.navbar-underline:hover{
+    color:#f0f0f0;
 }
     
 
@@ -130,23 +167,7 @@ footer a:hover {
 
 
 
-.roblox-search input {
-    border: none;
-    outline: none;
-    flex: 1;
-    font-size: 14px;
-}
 
-.roblox-search button {
-    background: #b6b6b6;
-    border: none;
-    width: 80px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
 
 .robux-price {
     color: #00ff73;
