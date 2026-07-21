@@ -1,231 +1,239 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carrinho - RBLOX Shop</title>
-  <!-- Google Icons -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Materialize CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-  <!-- Fonte moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      background-color: #1c1c1c;
-      color: white;
-      font-family: "Poppins", sans-serif;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    nav {
-      background-color: #ff3333;
-      border-bottom: 3px solid #cf0000;
-    }
+    <title>Carrinho - RBLOX Shop</title>
 
-    .logo-roblox {
-      font-weight: 900;
-      display: flex;
-      align-items: center;
-      font-size: 28px;
-      gap: 6px;
-      letter-spacing: 2px;
-    }
+    <!-- Ícones -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    .roblox-icon {
-      transform: translateY(8px);
-      display: inline-block;
-      width: 36px;
-      height: 36px;
-    }
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet">
 
-    .roblox-search {
-      margin-top: 10px;
-      display: flex;
-      align-items: center;
-      background: #fff;
-      border-radius: 30px;
-      overflow: hidden;
-      padding-left: 30px;
-      height: 40px;
-    }
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-    .roblox-search input {
-      border: none;
-      outline: none;
-      flex: 1;
-      font-size: 14px;
-    }
-
-    .roblox-search button {
-      background: #b6b6b6;
-      border: none;
-      width: 80px;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
-
-    .roblox-search button i {
-      color: rgb(43, 43, 43);
-    }
-
-    .promo-banner {
-      background: #cf0000;
-      color: white;
-      padding: 10px 0;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .collection-item {
-      background-color: #262626;
-      color: white;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
-
-    .collection-item .title {
-      color: white;
-    }
-
-    .collection-item p {
-      color: #ff6666;
-    }
-
-    .cart-summary {
-      background-color: #262626;
-      padding: 20px;
-      border-radius: 10px;
-      margin-top: 20px;
-    }
-
-    .btn-red {
-      background-color: #ff3333;
-    }
-
-    .btn-red:hover {
-      background-color: #cf0000;
-    }
-
-    footer {
-      background-color: #181818;
-      color: #c2c2c2;
-    }
-
-    footer a {
-      color: #c2c2c2;
-    }
-
-    footer a:hover {
-      color: white;
-    }
-
-    .secondary-content i {
-      cursor: pointer;
-    }
-
-  </style>
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav>
-      <div class="nav-wrapper container">
-          <a href="index.html" class="brand-logo logo-roblox">R<img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/0/e/e/0eeeb19633422b1241f4306419a0f15f39d58de9.png" class="roblox-icon">BLOX</a>
-          <ul class="right hide-on-med-and-down">
-          <li style="width:300px; margin-right:20px;">
-              <form class="roblox-search">
-                <input type="text" placeholder="Buscar itens, Robux...">
-                <button type="submit"><i class="material-icons">search</i></button>
-              </form>
-          </li>
-          <li><a href="categoria.html">Itens</a></li>
-          <li><a href="#">Robux</a></li>
-          <li><a href="#">Ofertas</a></li>
-          <li><a href="login.html">Login</a></li>
-          </ul>
-      </div>
-  </nav>
 
-  <!-- Promo Banner -->
-  <div class="promo-banner">
-    🎉 Consiga 1300 Robux por apenas R$50!
-  </div>
+    <!-- NAVBAR -->
 
-  <!-- Carrinho -->
-  <div class="container section">
-    <h4>Carrinho de Compras</h4>
-    <p>Revise seus produtos antes de continuar.</p>
+    <nav>
 
-    <div class="row">
-      <!-- Itens do Carrinho -->
-      <div class="col s12 m8">
-        <ul class="collection">
-          <li class="collection-item avatar cart-item">
-            <img src="https://production-gameflipusercontent.fingershock.com/us-east-1:a8918237-53f9-44b7-bc4d-a7db769fddb1/cab14e70-12fb-4b65-82f0-5d889e2703af/32a13ceb-14c8-4f45-8eb7-40d02ccd10bd/640x640.webp" alt="Robux" width="350" height="250">
-            <span class="title"><strong>450 Robux</strong></span>
-            <p><br></p>
-            <p>R$ 24,90</p>
-            <a href="#!" class="secondary-content"><i class="material-icons red-text">delete</i></a>
-          </li>
+        <div class="nav-esquerda">
 
-          <li class="collection-item avatar cart-item">
-            <img src="https://tr.rbxcdn.com/180DAY-4ed9003ad24104766d027d70bb6d9cec/420/420/Hat/Webp/noFilter" alt="Chapéu" width="350" height="250">
-            <span class="title"><strong>Chapéu Dominus Vermelho</strong></span>
-            <p>Tamanho: G <br> Cor: Vermelho</p>
-            <p>937 Robux</p>
-            <a href="#!" class="secondary-content"><i class="material-icons red-text">delete</i></a>
-          </li>
-          
-        </ul>
-        <div class="cart-summary center">
-          <p class="total">Valor Total: R$ 24,90 + 937 Robux</p>
-          <a href="checkout.html" class="btn btn-red">Finalizar Compra</a>
+            <a href="index.html" class="nome-logo-roblox">
+
+                R
+
+                <img src="https://devforum-uploads.s3.dualstack.us-east-2.amazonaws.com/uploads/original/4X/5/2/b/52bce3b02f6c5dddf9dfd5390fa00a9b2be6fa38.png"
+                    class="roblox-icon"
+                    alt="Logo Roblox">
+
+                BLOX
+
+            </a>
+
         </div>
-      </div>
+
+        <div class="nav-centro">
+
+            <form class="roblox-search">
+
+                <input
+                    class="roblox-search-txt"
+                    type="text"
+                    placeholder="Buscar itens, Robux...">
+
+                <button type="submit">
+
+                    <i class="material-icons">search</i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="nav-direita">
+
+            <ul class="lista-navbar-roblox">
+
+                <li><a class="navbar-underline" href="categoria.html">Itens</a></li>
+
+                <li><a class="navbar-underline" href="#">Robux</a></li>
+
+                <li><a class="navbar-underline" href="#">Ofertas</a></li>
+
+                <li><a class="navbar-underline" href="login.html">Login</a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+    <!-- Promo -->
+
+    <div class="promo-banner">
+
+        🎉 Consiga 1300 Robux por apenas R$ 50!
+
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="page-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 m4">
-          <h6>Suporte</h6>
-          <ul>
-            <li><a href="#">Devolução e Garantia</a></li>
-            <li><a href="#">Pagamentos</a></li>
-            <li><a href="#">Envio</a></li>
-          </ul>
-        </div>
-        <div class="col s12 m4">
-          <h6>Sobre</h6>
-          <ul>
-            <li><a href="#">Quem somos</a></li>
-            <li><a href="#">Parcerias</a></li>
-            <li><a href="#">Afiliados</a></li>
-          </ul>
-        </div>
-        <div class="col s12 m4">
-          <h6>Contato</h6>
-          <p>Email: suporte@r-bloxshop.com</p>
-        </div>
-      </div>
-      <div class="center">
-        © 2025 RBLOX Shop — Não afiliado ao Roblox.
-      </div>
-    </div>
-  </footer>
+    <!-- Carrinho -->
 
-  <!-- Materialize JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      M.Sidenav.init(document.querySelectorAll('.sidenav'));
-    });
-  </script>
+    <section class="carrinho">
+
+        <h1>Carrinho de Compras</h1>
+
+        <p>
+
+            Revise seus produtos antes de finalizar sua compra.
+
+        </p>
+
+        <div class="lista-carrinho">
+
+            <!-- Produto -->
+
+            <div class="item-carrinho">
+
+                <img src="https://i0.wp.com/3sixtyinsights.com/wp-content/uploads/2021/03/Roblox-2.png?fit=420%2C420&ssl=1"
+                    alt="450 Robux">
+
+                <div class="item-info">
+
+                    <h3>450 Robux</h3>
+
+                    <span>Quantidade: 1</span>
+
+                    <p class="robux-price">
+                        R$ 24,90
+                    </p>
+
+                </div>
+
+                <button class="remover-item">
+
+                    <i class="material-icons">delete</i>
+
+                </button>
+
+            </div>
+
+            <!-- Produto -->
+
+            <div class="item-carrinho">
+
+                <img src="https://robloxid.com/wp-content/sites/robloxid/api-images/hat-accessory/dominus-18315918414.png"
+                    alt="Dominus">
+
+                <div class="item-info">
+
+                    <h3>Chapéu Dominus Vermelho</h3>
+
+                    <span>Quantidade: 1</span>
+
+                    <p class="robux-price">
+                        937 Robux
+                    </p>
+
+                </div>
+
+                <button class="remover-item">
+
+                    <i class="material-icons">delete</i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Resumo -->
+
+        <div class="resumo-carrinho">
+
+            <h2>Resumo do Pedido</h2>
+
+            <p>
+
+                Total:
+
+                <strong>
+
+                    R$ 24,90 + 937 Robux
+
+                </strong>
+
+            </p>
+
+            <a href="checkout.html" class="btn-comprar">
+
+                <i class="material-icons">shopping_cart_checkout</i>
+
+                Finalizar Compra
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <h3>Suporte</h3>
+
+                <a href="#">Como comprar</a>
+
+                <a href="#">Pagamentos</a>
+
+                <a href="#">Entrega digital</a>
+
+            </div>
+
+            <div>
+
+                <h3>Sobre</h3>
+
+                <a href="#">Quem somos</a>
+
+                <a href="#">Parcerias</a>
+
+                <a href="#">Afiliados</a>
+
+            </div>
+
+            <div>
+
+                <h3>Contato</h3>
+
+                <p>suporte@r-bloxshop.com</p>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2025 RBLOX Shop — Não afiliado ao Roblox.
+
+        </p>
+
+    </footer>
+
 </body>
+
 </html>
